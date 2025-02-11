@@ -19,8 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
             case "experiencias":
                 response.innerHTML = data.commands.experiencias;
                 break;
-            case "sobreMim":
+            case "sobre mim":
                 response.innerHTML = data.commands.sobreMim;
+                break;
+            case "get linkedin":
+                window.open("https:/www.linkedin.com/in/rafael-vinicius-954698281", "_blank");
+                response.innerHTML = "Abrindo LinkedIn em uma nova aba...";
                 break;
             default:
                 response.textContent = data.defaultResponse;

@@ -4,7 +4,8 @@ const data = {
             <li><code>help</code>: Mostrar informações sobre mim</li>
             <li><code>clear</code>: Limpa o terminal</li>
             <li><code>experiencias</code>: Mostra uma lista das minhas experiencias</li>
-            <li><code>sobreMim</code>: Mostra infomações sobre mim</li>
+            <li><code>sobre mim</code>: Mostra infomações sobre mim</li>
+            <li><code>get linkedin</code>: link para o meu linkedin </li>
         `,
         sobreMim: `{<br>
       &nbsp;&nbsp;&nbsp;"nome" : "Rafael Vinicius Germinari Gonçalves",<br>
