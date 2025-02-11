@@ -1,0 +1,139 @@
+body {
+    background-color: #300a24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+.terminal {
+    width: 100%;
+    max-width: 800px;
+    background-color: #2c001e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.terminal-header {
+    background-color: #3a0931;
+    padding: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.terminal-header .buttons {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.red {
+    background: #ff5f56;
+}
+
+.yellow {
+    background: #ffbd2e;
+}
+
+.green {
+    background: #27c93f;
+}
+
+.terminal-body {
+    padding: 15px;
+    font-family: monospace;
+    color: #ffffff;
+    min-height: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prompt {
+    color: #00ff00;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+input {
+    background: none;
+    border: none;
+    color: white;
+    font-family: monospace;
+    outline: none;
+    flex: 1;
+    min-width: 50px;
+}
+
+code{
+    font-size: 17px;
+}
+
+
+table {
+    margin: 10px;
+    border: 1px dashed white;
+    border-spacing: 0; /* Remove espaçamento padrão entre células */
+    width: 100%; /* Faz a tabela ocupar 100% do espaço disponível */
+    border-collapse: separate; /* Permite usar border-spacing */
+    border-spacing: 10px; /* Adiciona espaçamento interno entre as células */
+}
+
+td, th {
+    color: white;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+    padding: 5px; /* Espaçamento interno padrão para todas as células */
+}
+
+/* Ajuste específico para a coluna de Data */
+td:nth-child(1) {
+    width: 15%; /* Define a largura da coluna Data */
+    padding-right: 10px; /* Espaçamento interno à direita */
+}
+
+/* Ajuste específico para a coluna de Descrição */
+td:nth-child(4) {
+    width: 60%; /* Define a largura da coluna Descrição */
+    padding-left: 10px; /* Espaçamento interno à esquerda */
+}
+
+
+/* Estilo da barra de rolagem para navegadores WebKit (Chrome, Safari, Edge) */
+.terminal-body::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+.terminal-body::-webkit-scrollbar-track {
+    background: #1e0015; /* Cor de fundo da trilha */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+    background: #4a1a3a; /* Cor do "ponteiro" da barra de rolagem */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 2px solid #1e0015; /* Borda para destacar o ponteiro */
+}
+
+.terminal-body::-webkit-scrollbar-thumb:hover {
+    background: #6a2a4a; /* Cor do "ponteiro" ao passar o mouse */
+}
+
+/* Estilo da barra de rolagem para navegadores Firefox */
+.terminal-body {
+    scrollbar-width: thin; /* Largura da barra de rolagem */
+    scrollbar-color: #4a1a3a #1e0015; /* Cor do ponteiro e da trilha */
+}
