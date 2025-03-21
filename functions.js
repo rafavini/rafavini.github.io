@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 response.innerHTML = data.commands.sobreMim;
                 break;
             case "get linkedin":
-                window.open("https:/www.linkedin.com/in/rafael-vinicius-954698281", "_blank");
+                window.open("https://www.linkedin.com/in/rafael-vinicius-954698281", "_blank");
                 response.innerHTML = "Abrindo LinkedIn em uma nova aba...";
                 break;
             case "get github":
