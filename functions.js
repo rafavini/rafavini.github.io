@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let output = document.createElement("div");
         output.innerHTML = `<span class="prompt">rafael Vinicius:~/portifolio$</span> ${command}`;
         terminalBody.insertBefore(output, inputField.parentElement);
-        
+
         let response = document.createElement("div");
         switch (command) {
             case "help":
@@ -26,6 +26,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 window.open("https:/www.linkedin.com/in/rafael-vinicius-954698281", "_blank");
                 response.innerHTML = "Abrindo LinkedIn em uma nova aba...";
                 break;
+            case "get github":
+                window.open("https://github.com/rafavini", "_blank");
+                response.innerHTML = "Abrindo github em uma nova aba...";
+                break;
+            case "get curriculo":
+                const a = document.createElement("a");
+                a.href = "assets/Curriculo - Rafael Vinicius.pdf";
+                a.setAttribute("download", "Curriculo - Rafael Vinicius.pdf");
+                a.setAttribute("target", "blank");
+                a.click();
+                response.innerHTML = "Baixando arquivo ...";
+                break;
             default:
                 response.textContent = data.defaultResponse;
         }
@@ -39,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         inputLine.innerHTML = '<span class="prompt">rafael Vinicius:~/portifolio$</span> <input type="text" id="command-input" autofocus>';
         terminalBody.appendChild(inputLine);
         inputField = document.getElementById("command-input");
-        inputField.focus(); // Foca automaticamente no novo campo de entrada
+        inputField.focus();
         inputField.addEventListener("keypress", function (event) {
             if (event.key === "Enter") {
                 event.preventDefault();

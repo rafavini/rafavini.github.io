@@ -1,19 +1,21 @@
 const data = {
     commands: {
         help: `
-            <li><code>help</code>: Mostrar informações sobre mim</li>
+            <li><code>help</code>: Mostrar informações dos comando disponiveis</li>
             <li><code>clear</code>: Limpa o terminal</li>
             <li><code>experiencias</code>: Mostra uma lista das minhas experiencias</li>
             <li><code>sobre mim</code>: Mostra infomações sobre mim</li>
             <li><code>get linkedin</code>: link para o meu linkedin </li>
+            <li><code>get github</code>: link para o meu Github </li>
+            <li><code>get curriculo</code>: Donwload do meu curriculo</li>
         `,
         sobreMim: `{<br>
-      &nbsp;&nbsp;&nbsp;"nome" : "Rafael Vinicius Germinari Gonçalves",<br>
-      &nbsp;&nbsp;&nbsp;"formação": "Ciência da computação - Universidade Federal de Mato Grosso do Sul",<br>
-      &nbsp;&nbsp;&nbsp;"linguagem" : "JS, HTML, CSS, C#, PHP",<br>
-      &nbsp;&nbsp;&nbsp;"framework" : "React, ASPNET",<br>
-      &nbsp;&nbsp;&nbsp;"IDE favorita": "VS Code",<br>
-      &nbsp;&nbsp;&nbsp;"cidade" : "Campo grande, Brasil"<br>
+      &nbsp;&nbsp;&nbsp;<code>"Nome"</code> : "Rafael Vinicius Germinari Gonçalves",<br>
+      &nbsp;&nbsp;&nbsp;<code>"Formação"</code>: "Ciência da computação - Universidade Federal de Mato Grosso do Sul",<br>
+      &nbsp;&nbsp;&nbsp;<code>"Linguagens"</code> : "C#, Python, PHP, JS, HTML, CSS",<br>
+      &nbsp;&nbsp;&nbsp;<code>"Framework"</code> : "React, React Native ,ASPNET, Django",<br>
+      &nbsp;&nbsp;&nbsp;<code>"IDE favorita"</code>: "VS Code",<br>
+      &nbsp;&nbsp;&nbsp;<code>"Cidade"</code> : "Campo grande, Brasil ❤"<br>
     }`,
         experiencias: `
             <strong>Experiência Profissional:</strong>
@@ -43,7 +45,7 @@ const data = {
                         <td>nov 2023 - Hoje</td>
                         <td>SENAC</td>
                         <td>Professor</td=>
-                        <td>Atuando em ensinar, gerenciar e acompanhar a fabrica de software em soluções para o mercado de trabalho </td>
+                        <td>Atuando em ensinar, gerenciar e acompanhar a fabrica de software em soluções para o mercado de trabalho, trabalhando com react, react native, Django e PHP </td>
                     </tr>
                 </tbody>
             </table> 
